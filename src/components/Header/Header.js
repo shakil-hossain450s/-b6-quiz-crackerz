@@ -106,7 +106,7 @@ export const Header = () => {
                                             </li>
                                             <li>
                                                 <Link
-                                                    href="/statics"
+                                                    to="/statics"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
