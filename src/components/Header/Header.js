@@ -5,7 +5,7 @@ export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="bg-white shadow-lg">
+        <div className="bg-white shadow-lg sticky top-0 right-0 z-20">
             <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <div className="relative flex items-center justify-between">
                     <Link
@@ -31,7 +31,7 @@ export const Header = () => {
                         </li>
                         <li>
                             <Link
-                                href="/statics"
+                                to="/statics"
                                 aria-label="Our product"
                                 title="Our product"
                                 className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -41,7 +41,7 @@ export const Header = () => {
                         </li>
                         <li>
                             <Link
-                                href="/blog"
+                                to="/blog"
                                 aria-label="Our product"
                                 title="Our product"
                                 className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -66,7 +66,7 @@ export const Header = () => {
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
                                             <Link
-                                                href="/"
+                                                to="/"
                                                 aria-label="Company"
                                                 title="Company"
                                                 className="inline-flex items-center"
@@ -96,7 +96,7 @@ export const Header = () => {
                                         <ul className="space-y-4">
                                             <li>
                                                 <Link
-                                                    href="/home"
+                                                    to="/home"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -116,7 +116,7 @@ export const Header = () => {
                                             </li>
                                             <li>
                                                 <Link
-                                                    href="/blog"
+                                                    to="/blog"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
