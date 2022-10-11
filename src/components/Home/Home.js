@@ -4,7 +4,6 @@ import Topics from '../Topics/Topics';
 
 const Home = () => {
     const quizes = useContext(QuizContext);
-    console.log(quizes);
     return (
         <div className='mt-5'>
             <h2 className='text-4xl font-semibold'>Choose Your Quiz</h2>
@@ -14,9 +13,9 @@ const Home = () => {
             </p>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 w-5/6 mx-auto my-8'>
                 {
-                    quizes.map(topic => <Topics
-                        key={topic.id}
-                        topic={topic}
+                    quizes.map(quiz => <Topics
+                        key={quiz.id}
+                        quiz={quiz}
                     ></Topics>)
                 }
             </div>
