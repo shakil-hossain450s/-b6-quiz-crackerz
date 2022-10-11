@@ -6,6 +6,12 @@ import { EyeIcon } from '@heroicons/react/24/solid';
 const Question = ({ example }) => {
     const { correctAnswer, id, options, question } = example;
 
+    const [correctAns, setCorrectAns] = useState([]);
+    const handleToSetCorrectAns = correct => {
+        setCorrectAns(correct);
+        toast.success('Right Answer Showed', { autoClose: 500, position: 'top-center' })
+    }
+
     const handleToShowAns = () => {
         toast.success('Clicked', { autoClose: 500, position: 'top-center' })
     }
@@ -16,12 +22,6 @@ const Question = ({ example }) => {
         else
             str = str.toString();
         return str.replace(/(<([^>]+)>)/ig, '');
-    }
-
-    const [correctAns, setCorrectAns] = useState([]);
-    const handleToSetCorrectAns = correct => {
-        setCorrectAns(correct);
-        toast.success('Right Answer Showed', { autoClose: 500, position: 'top-center' })
     }
 
     return (

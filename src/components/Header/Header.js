@@ -13,9 +13,9 @@ export const Header = () => {
                         to='/'
                         aria-label="Company"
                         title="Company"
-                        className="inline-flex items-cente2
+                        className="inline-flex items-center
                         px-5 py-2 rounded-md">
-                        <span className="ml-2 textl font-bold bg-white  tracking-wide text-black-100 p uppercase">
+                        <span className="ml-2 text-xl font-bold bg-white tracking-wide text-black-100 p uppercase">
                             Quiz Hunter
                         </span>
                     </Link>
@@ -67,7 +67,7 @@ export const Header = () => {
                                 <div className="p-5 bg-white border rounded shadow-sm">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
-                                            <NavLink
+                                            <Link
                                                 to="/"
                                                 aria-label="Company"
                                                 title="Company"
@@ -76,7 +76,7 @@ export const Header = () => {
                                                 <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                                                     Company
                                                 </span>
-                                            </NavLink>
+                                            </Link>
                                         </div>
                                         <div>
                                             <button
@@ -95,13 +95,13 @@ export const Header = () => {
                                         </div>
                                     </div>
                                     <nav>
-                                        <ul className="space-y-4">
+                                        <ul className="space-y-10">
                                             <li>
                                                 <NavLink
                                                     to="/home"
-                                                    aria-label="Our produc2"
-                                                    title="Our product px-5 py-2 rounded-md"
-                                                    className="font-medium tracking-we text-black-100 p transition-colors duration-200 hover:text-teal-accent-400"
+                                                    aria-label="Home"
+                                                    title="Home px-5 py-2 rounded-md"
+                                                    className={`font-medium rounded-sm px-5 py-2 tracking-we text-black-100 p transition-colors duration-200 hover:text-teal-accent-400 ${({ isActive }) => isActive ? 'active' : undefined}`}
                                                 >
                                                     Home
                                                 </NavLink>
@@ -109,9 +109,9 @@ export const Header = () => {
                                             <li>
                                                 <NavLink
                                                     to="/statics"
-                                                    aria-label="Our produc2"
-                                                    title="Our product px-5 py-2 rounded-md"
-                                                    className="font-medium tracking-we text-black-100 p transition-colors duration-200 hover:text-teal-accent-400"
+                                                    aria-label="Statics"
+                                                    title="Statics px-5 py-2 rounded-md"
+                                                    className="font-medium rounded-sm px-5 py-2 tracking-we text-black-100 p transition-colors duration-200 hover:text-teal-accent-400"
                                                 >
                                                     Statics
                                                 </NavLink>
@@ -119,9 +119,9 @@ export const Header = () => {
                                             <li>
                                                 <NavLink
                                                     to="/blog"
-                                                    aria-label="Our produc2"
-                                                    title="Our product px-5 py-2 rounded-md"
-                                                    className="font-medium tracking-we text-black-100 p transition-colors duration-200 hover:text-teal-accent-400"
+                                                    aria-label="Blog"
+                                                    title="Blog px-5 py-2 rounded-md"
+                                                    className="font-medium rounded-sm px-5 py-2 tracking-we text-black-100 p transition-colors duration-200 hover:text-teal-accent-400"
                                                 >
                                                     Blog
                                                 </NavLink>
