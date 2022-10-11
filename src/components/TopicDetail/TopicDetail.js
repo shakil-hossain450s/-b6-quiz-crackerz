@@ -6,6 +6,10 @@ const TopicDetail = () => {
     const quizeDetails = useLoaderData().data;
     const { questions } = quizeDetails;
 
+    console.log(questions.length);
+
+
+
     return (
         <div className='grid grid-cols-1 w-4/6 mx-auto gap-12 my-8'>
             {

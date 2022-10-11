@@ -2,8 +2,10 @@ import React from 'react';
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 
+
 const Topics = ({ quiz }) => {
     const { id, logo, name, total } = quiz;
+
     return (
         <div className='border p-4 rounded-lg shadow-lg'>
             < img className='w-full bg-gray-800 border-gray-300 border-2 rounded-lg' src={logo} alt="" />
