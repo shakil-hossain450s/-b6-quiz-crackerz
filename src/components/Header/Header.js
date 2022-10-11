@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Bars3Icon } from '@heroicons/react/24/solid';
+import './Header.css';
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,42 +13,44 @@ export const Header = () => {
                         to='/'
                         aria-label="Company"
                         title="Company"
-                        className="inline-flex items-center"
-                    >
-                        <span className="ml-2 text-xl font-bold tracking-wide text-black-100 uppercase">
+                        className='inline-flex items-cente2'
+                        px-5 py-2 rounded-md>
+                        <span className="ml-2 textl font-bold bg-white  tracking-wide text-black-100 p uppercase">
                             Quiz Hunter
                         </span>
                     </Link>
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
-                            <Link
+                            <NavLink
                                 to='/home'
                                 aria-label="Our product"
                                 title="Our product"
-                                className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className={`font-medium tracking-wide text-black-100 px-5 py-2 rounded-md transition-colors duration-200 hover:text-teal-accent-400
+                                `}
                             >
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link
+                            <NavLink
                                 to="/statics"
                                 aria-label="Our product"
                                 title="Our product"
-                                className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className={`font-medium tracking-wide text-black-100 px-5 py-2 rounded-md transition-colors duration-200 hover:text-teal-accent-400
+                                ${({ isActive }) => isActive ? 'active' : undefined}`}
                             >
                                 Statics
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link
+                            <NavLink
                                 to="/blog"
                                 aria-label="Our product"
                                 title="Our product"
-                                className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className="font-medium tracking-wide text-black-100 px-5 py-2 rounded-md transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Blog
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                     <div className="lg:hidden">
@@ -65,7 +68,7 @@ export const Header = () => {
                                 <div className="p-5 bg-white border rounded shadow-sm">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
-                                            <Link
+                                            <NavLink
                                                 to="/"
                                                 aria-label="Company"
                                                 title="Company"
@@ -74,7 +77,7 @@ export const Header = () => {
                                                 <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                                                     Company
                                                 </span>
-                                            </Link>
+                                            </NavLink>
                                         </div>
                                         <div>
                                             <button
@@ -95,34 +98,34 @@ export const Header = () => {
                                     <nav>
                                         <ul className="space-y-4">
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to="/home"
-                                                    aria-label="Our product"
-                                                    title="Our product"
-                                                    className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                                    aria-label="Our produc2"
+                                                    title="Our product px-5 py-2 rounded-md"
+                                                    className="font-medium tracking-we text-black-100 p transition-colors duration-200 hover:text-teal-accent-400"
                                                 >
                                                     Home
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to="/statics"
-                                                    aria-label="Our product"
-                                                    title="Our product"
-                                                    className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                                    aria-label="Our produc2"
+                                                    title="Our product px-5 py-2 rounded-md"
+                                                    className="font-medium tracking-we text-black-100 p transition-colors duration-200 hover:text-teal-accent-400"
                                                 >
                                                     Statics
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to="/blog"
-                                                    aria-label="Our product"
-                                                    title="Our product"
-                                                    className="font-medium tracking-wide text-black-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                                    aria-label="Our produc2"
+                                                    title="Our product px-5 py-2 rounded-md"
+                                                    className="font-medium tracking-we text-black-100 p transition-colors duration-200 hover:text-teal-accent-400"
                                                 >
                                                     Blog
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                         </ul>
                                     </nav>
@@ -132,7 +135,7 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
