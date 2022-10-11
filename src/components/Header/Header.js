@@ -13,8 +13,8 @@ export const Header = () => {
                         to='/'
                         aria-label="Company"
                         title="Company"
-                        className='inline-flex items-cente2'
-                        px-5 py-2 rounded-md>
+                        className="inline-flex items-cente2
+                        px-5 py-2 rounded-md">
                         <span className="ml-2 textl font-bold bg-white  tracking-wide text-black-100 p uppercase">
                             Quiz Hunter
                         </span>
@@ -25,8 +25,7 @@ export const Header = () => {
                                 to='/home'
                                 aria-label="Our product"
                                 title="Our product"
-                                className={`font-medium tracking-wide text-black-100 px-5 py-2 rounded-md transition-colors duration-200 hover:text-teal-accent-400
-                                `}
+                                className="font-medium tracking-wide text-black-100 px-5 py-2 rounded-md transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Home
                             </NavLink>
@@ -133,8 +132,8 @@ export const Header = () => {
                             </div>
                         )}
                     </div>
-                </div>
-            </div>
+                </div >
+            </div >
         </div >
     );
 };

@@ -4,6 +4,7 @@ import Topics from '../Topics/Topics';
 
 const Home = () => {
     const quizes = useContext(QuizContext);
+
     return (
         <div className='mt-5'>
             <h2 className='text-4xl font-semibold'>Choose Your Quiz</h2>
