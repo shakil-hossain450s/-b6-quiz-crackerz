@@ -6,7 +6,7 @@ import Question from '../Question/Question';
 const TopicDetail = () => {
     const quizeDetails = useLoaderData().data;
     const { questions } = quizeDetails;
-    const [names, setNames] = useContext(NameContext);
+    const [names] = useContext(NameContext);
 
     return (
         <div className='grid grid-cols-1 w-4/6 mx-auto gap-12 my-8'>

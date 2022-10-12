@@ -9,11 +9,7 @@ const Question = ({ example }) => {
     const [correctAns, setCorrectAns] = useState([]);
     const handleToSetCorrectAns = correct => {
         setCorrectAns(correct);
-        toast.success('Right Answer Showed', { autoClose: 500, position: 'top-center' })
-    }
-
-    const handleToShowAns = () => {
-        toast.success('Clicked', { autoClose: 500, position: 'top-center' })
+        toast.success(`Right Answer: ${correctAnswer}`, { autoClose: 500, position: 'top-center' })
     }
 
     function removeTags(str) {
@@ -27,14 +23,14 @@ const Question = ({ example }) => {
     return (
         <div className='bg-white p-5 rounded-lg shadow-2xl relative'>
             <EyeIcon onClick={() => handleToSetCorrectAns(correctAnswer)}
-                className='w-5 h-5 absolute top-0 right-5 cursor-pointer'></EyeIcon>
+                className='w-5 h-5 absolute top-2 right-5 cursor-pointer'></EyeIcon>
             <h2 className='text-xl font-medium'>Question: {removeTags(question)}</h2>
             <div className='grid lg:grid-cols-2 gap-5 mt-5'>
                 {
                     options.map(option => <Option
                         option={option}
                         id={id}
-                        handleToShowAns={handleToShowAns}
+                        correctAnswer={correctAnswer}
                     ></Option>)
                 }
                 <h4 className='text-start ml-10 text-xl'>

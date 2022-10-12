@@ -2,10 +2,10 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='mt-8'>
+        <div className='mt-8 mx-5'>
             <h2 className='text-4xl font-semibold'>This is Blog</h2>
             <div className='my-5'>
-                <div tabindex="0" className="w-1/2 mx-auto collapse collapse-arrow border-2 border-gray-300 bg-base-100 rounded-box shadow-md my-5">
+                <div tabIndex="0" className="lg:w-1/2 mx-auto collapse collapse-arrow border-2 border-gray-300 bg-base-100 rounded-box shadow-md my-5">
                     <div className="collapse-title text-xl font-medium">
                         <h3>What is the Purpose of React Router???</h3>
                     </div>
@@ -16,7 +16,7 @@ const Blog = () => {
                         </p>
                     </div>
                 </div>
-                <div tabindex="0" className="w-1/2 mx-auto collapse collapse-arrow border-2  my-5 border-gray-300 bg-base-100 rounded-box shadow-md">
+                <div tabIndex="0" className="lg:w-1/2 mx-auto collapse collapse-arrow border-2  my-5 border-gray-300 bg-base-100 rounded-box shadow-md">
                     <div className="collapse-title text-xl font-medium">
                         <h3>How Does Context API Works???</h3>
                     </div>
@@ -27,7 +27,7 @@ const Blog = () => {
                         </p>
                     </div>
                 </div>
-                <div tabindex="0" className="w-1/2 mx-auto collapse collapse-arrow border-2 border-gray-300 bg-base-100 rounded-box shadow-md">
+                <div tabIndex="0" className="lg:w-1/2 mx-auto collapse collapse-arrow border-2 border-gray-300 bg-base-100 rounded-box shadow-md">
                     <div className="collapse-title text-xl font-medium">
                         <h3>useRef Hook Details.</h3>
                     </div>
