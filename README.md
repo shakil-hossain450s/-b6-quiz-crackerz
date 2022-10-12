@@ -2,7 +2,7 @@
 2. install react router dom
 3. Using Route element to go other route 
 4. set route use RouterProvider, createBrowserRouter
-5. Using Tailwind.css, react toastify , daisy ui
+5. Using Tailwind.css, react toastify , daisy ui, use heroicons
 6. Create Navbar using the component
 7. Dynamically load Data using loader fetch 
 8. Recive the fetch data using useLoaderData()
