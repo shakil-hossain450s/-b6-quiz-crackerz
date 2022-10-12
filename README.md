@@ -5,10 +5,12 @@
 5. Using Tailwind.css, react toastify , daisy ui
 6. Create Navbar using the component
 7. Dynamically load Data using loader fetch 
-8. Recieve the fetch data using useLoaderData()
+8. Recive the fetch data using useLoaderData()
 9. Crete the main component 
 10. dynamic url crete to go another dynamic page
 11. Set Home Page
 12. Set Blog page to set the 3 question
 13. Set Static Page and set The Recharts 
 14. Using the loader data and crete the quiz section to dynamically
+15. set the netlify requirement and create the _redirects  and set the text to the file : *  /index.html  200
+16. Set an error page
