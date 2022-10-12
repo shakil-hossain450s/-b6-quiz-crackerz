@@ -7,12 +7,12 @@ const Statics = () => {
     const topics = useContext(QuizContext);
     const { id, name, total } = topics;
     return (
-        <div className='flex items-center h-screen p-16 bg-gray-100 text-gray-900'>
+        <div className='lg:flex items-center h-screen p-16 bg-gray-100 text-gray-900'>
             <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
                 <h2 className='text-4xl font-semibold mb-8'>The Chart Is Here</h2>
                 <BarChart
-                    width={400}
-                    height={400}
+                    width={350}
+                    height={350}
                     data={topics}
                     margin={{
                         top: 20,
